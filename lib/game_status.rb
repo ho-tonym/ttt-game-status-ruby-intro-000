@@ -30,10 +30,29 @@ winner = ""
 
       if board_position_1 =="X" && board_position_2 == "X" && board_position_3 =="X"
         winner = "X"
-        return win_index
+        return win_index, ""
       elsif board_position_1 =="O" && board_position_2 == "O" && board_position_3 =="O"
         winner = "O"
         return win_index
+      end
+  end
+  return false
+end
+
+def my_won?(board)
+  WIN_COMBINATIONS.each do |win_index|
+      win_index_1 = win_index[0]
+      win_index_2 = win_index[1]
+      win_index_3 = win_index[2]
+
+      board_position_1 = board[win_index_1]
+      board_position_2 = board[win_index_2]
+      board_position_3 = board[win_index_3]
+
+      if board_position_1 =="X" && board_position_2 == "X" && board_position_3 =="X"
+        return "X"
+      elsif board_position_1 =="O" && board_position_2 == "O" && board_position_3 =="O"
+        return "O"
       end
   end
   return false
@@ -62,6 +81,10 @@ def over?(board)
 end
 
 def winner(board)
-
-  
+  if my_won?(board)== "X"
+    return "X"
+  elsif won?(board) == "O"
+    return "O"
+  else
+    return nil
 end
