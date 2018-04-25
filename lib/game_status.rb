@@ -31,8 +31,7 @@ def won?(board)
       if board_position_1 =="X" && board_position_2 == "X" && board_position_3 =="X" ||
         board_position_1 =="O" && board_position_2 == "O" && board_position_3 =="O"
         return win_index
-      else
-        return false
       end
+    return false
   end
 end
