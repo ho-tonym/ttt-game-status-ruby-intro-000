@@ -28,11 +28,11 @@ def won?(board)
       board_position_2 = board[win_index_2]
       board_position_3 = board[win_index_3]
 
-       if board_position_1 =="X" && board_position_2 == "X" && board_position_3 =="X" ||
+      break if board_position_1 =="X" && board_position_2 == "X" && board_position_3 =="X" ||
         board_position_1 =="O" && board_position_2 == "O" && board_position_3 =="O"
         return win_index
       else
-         return false
+        false
       end
   end
 end
