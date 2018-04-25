@@ -33,7 +33,7 @@ def won?(board)
         win_index
         break
       else
-         return false
+        false
       end
   end
 end
