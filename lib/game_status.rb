@@ -5,8 +5,9 @@ end
 
 WIN_COMBINATIONS =
 [
+    [3,4,5],
   [0,1,2],
-  [3,4,5],
+
   [6,7,8],
 
   [0,3,6],
@@ -30,7 +31,7 @@ def won?(board)
 
       if board_position_1 =="X" && board_position_2 == "X" && board_position_3 =="X" ||
         board_position_1 =="O" && board_position_2 == "O" && board_position_3 =="O"
-        return win_index
+
         break
       else
         return false
