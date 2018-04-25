@@ -19,7 +19,7 @@ WIN_COMBINATIONS =
 
 def won?(board)
 
-  WIN_COMBINATIONS.each {|win_index|
+  WIN_COMBINATIONS.each do |win_index|
       win_index_1 = win_index[0]
       win_index_2 = win_index[1]
       win_index_3 = win_index[2]
@@ -33,8 +33,5 @@ def won?(board)
       else
         return false
       end
-  }
-
-#check to see if arguemnt board is won, if so (HOW THEY WON)
-#return false if no win
+  end
 end
