@@ -15,6 +15,9 @@ WIN_COMBINATIONS =
 
   [0,4,8],
   [2,4,6],
-
 ]
-# Define your WIN_COMBINATIONS constant
+
+def won?(board)
+  WIN_COMBINATIONS
+
+end
