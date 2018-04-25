@@ -61,6 +61,7 @@ def over?(board)
 end
 
 def winner(board)
-  winner_first = won?(board)
+  winner = won?(board)
+  return winner[0]
 
 end
