@@ -32,6 +32,7 @@ def won?(board)
         board_position_1 =="O" && board_position_2 == "O" && board_position_3 =="O"
         return win_index
       end
-    return false
+
   end
+      return false
 end
